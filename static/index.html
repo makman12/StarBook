@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stars</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+  </head>
+  <body>
+    <main class="container" id="main">
+      <h2>Star Size Compare</h2>
+      <div id="inputs">
+        <input list="stars" id="input1" placeholder="Choose a Star" />
+      </div>
+      <div id="buttons" class="row">
+        <a id="run" class="btn blue col s6">Compare</a>
+        <a id="clear" class="btn red col s6">Clear</a>
+      </div>
+
+      <datalist id="stars"> </datalist>
+    </main>
+    <div id="show"></div>
+  </body>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://threejs.org/build/three.js"></script>
+  <script type="module" src="script.js"></script>
+</html>
