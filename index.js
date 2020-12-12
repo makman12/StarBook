@@ -3,10 +3,7 @@ const app = express();
 require("dotenv").config();
 const port = process.env.PORT;
 const mongoose = require("mongoose");
-mongoose.connect(
-  "mongodb+srv://mali12:19972005@arttimetravel.vvghh.mongodb.net/StarBook?retryWrites=true&w=majority",
-  { useNewUrlParser: true }
-);
+mongoose.connect(process.env.DB, { useNewUrlParser: true });
 
 const starSchema = new mongoose.Schema({
   name: String,
